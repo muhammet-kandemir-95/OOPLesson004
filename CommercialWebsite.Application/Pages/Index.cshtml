@@ -1,0 +1,103 @@
+﻿@page
+@using CommercialWebsite.DataContext.Dto
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    int clientCounter = 1;
+}
+
+<style>
+    table td {
+        width: 33%;
+    }
+
+    table td img {
+        width: 100%;
+    }
+
+    .sections {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .sections b{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .sections b::before{
+        content: "-";
+    }
+    .sections b::after{
+        content: "-";
+    }
+</style>
+
+<div class="text-center">
+    <h1 class="display-4">@ViewData["ClientsTitleText"]</h1>
+</div>
+
+<div class="text-center sections">
+    <b>
+        @ViewData["AllSectionText"]
+    </b>
+    <b>
+        @ViewData["WebsitesSectionText"]
+    </b>
+    <b>
+        @ViewData["SoftwareSectionText"]
+    </b>
+    <b>
+        @ViewData["UiuxSectionText"]
+    </b>
+    <b>
+        @ViewData["ECommerceSectionText"]
+    </b>
+</div>
+
+<div class="text-center">
+    <table>
+        @foreach (ClientDto client in (IEnumerable<ClientDto>)ViewData["Clients"])
+        {
+            if (clientCounter % 3 == 1)
+            {
+                @Html.Raw("<tr>")
+            }
+            <td>
+                <h3>@client.Name</h3>
+                <img src="@client.ImgLink" alt="">
+            </td>
+
+            if (clientCounter % 3 == 0)
+            {
+                @Html.Raw("</tr>")
+            }
+
+            clientCounter++;
+
+            <!--
+                    <tr>
+                        <td>
+                            ...
+                        </td>
+                        <td>
+                            ...
+                        </td>
+                        <td>
+                            ...
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            ...
+                        </td>
+                        <td>
+                            ...
+                        </td>
+                        <td>
+                            ...
+                        </td>
+                    </tr>
+                    -->
+        }
+    </table>
+</div>

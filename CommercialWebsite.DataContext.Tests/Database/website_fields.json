@@ -1,0 +1,82 @@
+[
+    {
+        "name": "menu__home",
+        "language": "tr",
+        "text": "Ana Sayfa"
+    },
+    {
+        "name": "menu__home",
+        "language": "en",
+        "text": "Home"
+    },
+    {
+        "name": "menu__clients",
+        "language": "tr",
+        "text": "Çalışmalarımız"
+    },
+    {
+        "name": "menu__clients",
+        "language": "en",
+        "text": "Clients"
+    },
+    {
+        "name": "page_clients__title",
+        "language": "tr",
+        "text": "ÇALIŞMALARIMIZ"
+    },
+    {
+        "name": "page_clients__section_all",
+        "language": "tr",
+        "text": "Tümü"
+    },
+    {
+        "name": "page_clients__section_websites",
+        "language": "tr",
+        "text": "Web Siteleri"
+    },
+    {
+        "name": "page_clients__section_software",
+        "language": "tr",
+        "text": "Özel Yazılımlar"
+    },
+    {
+        "name": "page_clients__section_ui_ux",
+        "language": "tr",
+        "text": "UI/UX"
+    },
+    {
+        "name": "page_clients__section_e_commerce",
+        "language": "tr",
+        "text": "E-Ticaret"
+    },
+    {
+        "name": "page_clients__title",
+        "language": "en",
+        "text": "CLIENTS"
+    },
+    {
+        "name": "page_clients__section_all",
+        "language": "en",
+        "text": "All"
+    },
+    {
+        "name": "page_clients__section_websites",
+        "language": "en",
+        "text": "Web Sites"
+    },
+    {
+        "name": "page_clients__section_software",
+        "language": "en",
+        "text": "Softwares"
+    },
+    {
+        "name": "page_clients__section_ui_ux",
+        "language": "en",
+        "text": "UI/UX"
+    },
+    {
+        "name": "page_clients__section_e_commerce",
+        "language": "en",
+        "text": "E-Commerce"
+    }
+]
